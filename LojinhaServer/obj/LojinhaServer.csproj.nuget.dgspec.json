@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\etec\\Desktop\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj": {}
+    "C:\\Users\\etec\\Documents\\GitHub\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\etec\\Desktop\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj": {
+    "C:\\Users\\etec\\Documents\\GitHub\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\etec\\Desktop\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj",
+        "projectUniqueName": "C:\\Users\\etec\\Documents\\GitHub\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj",
         "projectName": "LojinhaServer",
-        "projectPath": "C:\\Users\\etec\\Desktop\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj",
+        "projectPath": "C:\\Users\\etec\\Documents\\GitHub\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj",
         "packagesPath": "C:\\Users\\etec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\etec\\Desktop\\MongoBD-API-.NET6\\LojinhaServer\\obj\\",
+        "outputPath": "C:\\Users\\etec\\Documents\\GitHub\\MongoBD-API-.NET6\\LojinhaServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\etec\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.21.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
