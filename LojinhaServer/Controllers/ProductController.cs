@@ -34,7 +34,40 @@ namespace LojinhaServer.Controllers
                 return Ok(product);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Post(Product product)
+        {
+            await _repo.CreateAsync(product);
+            return CreatedAtAction(nameof(Get), new {id =product.Id}, product);
 
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(Product product)
+        {
+            var oldProduct = await _repo.GetByIdAsync(product.Id);
+            if (oldProduct == null)
+            {
+                return NotFound();
+            }
+
+            await _repo.UpdateAsync (product);
+            return NoContent();
+        }
+
+        [HttpDelete]
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            var product = await _repo.GetByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            await _repo.UpdateAsync (product);
+            return NoContent();
+        }
         
     }
 }
