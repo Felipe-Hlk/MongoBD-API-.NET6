@@ -1,0 +1,7 @@
+C:\Users\etec\Documents\GitHub\MongoBD-API-.NET6\LojinhaServer\obj\Debug\net7.0\LojinhaServer.csproj.AssemblyReference.cache
+C:\Users\etec\Documents\GitHub\MongoBD-API-.NET6\LojinhaServer\obj\Debug\net7.0\LojinhaServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\etec\Documents\GitHub\MongoBD-API-.NET6\LojinhaServer\obj\Debug\net7.0\LojinhaServer.AssemblyInfoInputs.cache
+C:\Users\etec\Documents\GitHub\MongoBD-API-.NET6\LojinhaServer\obj\Debug\net7.0\LojinhaServer.AssemblyInfo.cs
+C:\Users\etec\Documents\GitHub\MongoBD-API-.NET6\LojinhaServer\obj\Debug\net7.0\LojinhaServer.csproj.CoreCompileInputs.cache
+C:\Users\etec\Documents\GitHub\MongoBD-API-.NET6\LojinhaServer\obj\Debug\net7.0\LojinhaServer.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\etec\Documents\GitHub\MongoBD-API-.NET6\LojinhaServer\obj\Debug\net7.0\LojinhaServer.MvcApplicationPartsAssemblyInfo.cache

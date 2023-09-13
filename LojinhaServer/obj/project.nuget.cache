@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TMW6cvSDVAZKmUMPQOI/tcLrKYGt3B80OHbmqY1fnFmAS9oz5rQNFUIlLM2IqBC9e5UJ4IPzX490Y1rMF/uHfQ==",
+  "dgSpecHash": "rWmxlQ3AC06D2yAXXY6hgB/rK5WsId/TYHJQGAF8QBbV7NnnzzSCjeZ9DzQIpRDE0H6HulFu2r7Nb1OYYZ6eog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\etec\\Desktop\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj",
+  "projectFilePath": "C:\\Users\\etec\\Documents\\GitHub\\MongoBD-API-.NET6\\LojinhaServer\\LojinhaServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\etec\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\etec\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

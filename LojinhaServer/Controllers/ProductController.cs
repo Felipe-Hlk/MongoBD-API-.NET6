@@ -11,7 +11,7 @@ namespace LojinhaServer.Controllers
         private readonly IProductRepository _repo;
         public ProductsController (IProductRepository repo)
         {
-            _repo - repo;
+            _repo = repo;
 
         }
 
@@ -38,7 +38,7 @@ namespace LojinhaServer.Controllers
         public async Task<IActionResult> Post(Product product)
         {
             await _repo.CreateAsync(product);
-            return CreatedAtAction(nameof(Get), new {id =product.Id}, product);
+            return CreatedAtAction(nameof(Get), new {id = product.Id}, product);
 
         }
 
