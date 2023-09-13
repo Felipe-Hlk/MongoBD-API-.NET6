@@ -3,6 +3,10 @@ using LojinhaServer.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.ConfigureMongoDBSettings (builder.Configuration);
+builder.Services.ConfigureProductRepository();
+
 builder.Services.ConfigureMongoDBSettings(builder.Configuration);
 
 builder.Services.AddControllers();
