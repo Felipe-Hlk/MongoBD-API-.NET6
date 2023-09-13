@@ -1,13 +1,14 @@
- using LojinhaServer.Models;
- using MongoDB.Driver;
+using LojinhaServer.Models;
+using MongoDB.Driver;
 
- namespace LojinhaServer.Extensions;
+namespace LojinhaServer.Extensions;
 
- public static class ServiceExtensions
- {
+public static class ServiceExtensions
+{
     public static void ConfigureCors(this IServiceCollection services)
     {
-        services.AddCors(options =>{
+        services.AddCors(options =>
+        {
             options.AddPolicy("Corspolicy",
                 builder => builder.AllowAnyOrigin()
                     .AllowAnyMethod()
@@ -17,21 +18,21 @@
         });
     }
 
- }
+    public static void ConfigureMongoDBSettings(this IServiceCollection services, IConfiguration config)
+    {
+        services.Configure<MongoDBSettings>(
+            config.GetSection("MongoDBSettings")
+        );
 
- public static void ConfigureMongoDBSettings(this IServiceCollection services, IConfiguration config)
- {
-    services.ConfigureCors< MongoDBSettings >(
-        config.GetSection("MongoDBSettings")
-    );
+        services.AddSingleton<IMongoDatabase>(options =>
+        {
+            var settings = config.GetSection("MongoDBSettings")
+                .Get<MongoDBSettings>();
 
-    services.AddSingleton< IMOngoDatabase > (options =>{
-        var settings = config.GetSection("MongoDBSettings")
-            .Get<MongoDBSettings>();
-        
-        var client = new MongoClient( settings.ConnectionString );
-        return client.GetDatabase(settings.DatabaseName); 
+            var client = new MongoClient(settings.ConnectionString);
+            return client.GetDatabase(settings.DatabaseName);
 
-    });
+        });
 
- }
+    }
+}
